@@ -24,6 +24,6 @@
 		"christopherbolt/silverstripe-bolt-themes": "dev-master"
     },
 	"extra": {
-        "installer-name": "themes"
+        "installer-name": "mysite"
     }
 }
