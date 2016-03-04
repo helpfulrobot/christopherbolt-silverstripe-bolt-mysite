@@ -20,7 +20,8 @@
     	"sheadawson/silverstripe-linkable": "dev-master",
     	"bummzack/sortablefile" : "dev-master",
 		"christopherbolt/silverstripe-bolttools": "dev-master",
-		"christopherbolt/silverstripe-publishwithme": "dev-master"
+		"christopherbolt/silverstripe-publishwithme": "dev-master",
+		"christopherbolt/silverstripe-bolt-themes": "dev-master"
     },
 	"extra": {
         "installer-name": "themes"
