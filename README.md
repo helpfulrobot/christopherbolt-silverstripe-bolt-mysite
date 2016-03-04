@@ -4,4 +4,4 @@ Install silverstripe:
 composer create-project silverstripe/installer /path/to/project 3.3.1
 
 Then install me:
-composer require silverstripe-bolt-mysite
+composer require christopherbolt/silverstripe-bolt-mysite
