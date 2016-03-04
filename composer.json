@@ -25,11 +25,5 @@
     },
 	"extra": {
         "installer-name": "mysite"
-    },
-	"scripts": {
-        "post-package-install": [
-            "cat install/htaccess.txt >> ../.htaccess",
-			"rm ../install.php"
-        ]
     }
 }
