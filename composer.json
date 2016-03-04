@@ -30,6 +30,6 @@
         "post-install-cmd": [
             "cat install/htaccess.txt >> ../.htaccess",
 			"rm ../install.php"
-        ],
+        ]
     }
 }
