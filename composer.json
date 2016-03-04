@@ -27,7 +27,7 @@
         "installer-name": "mysite"
     },
 	"scripts": {
-        "post-install-cmd": [
+        "post-package-install": [
             "cat install/htaccess.txt >> ../.htaccess",
 			"rm ../install.php"
         ]
