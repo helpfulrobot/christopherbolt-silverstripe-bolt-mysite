@@ -1,0 +1,8 @@
+---
+Name: customroutes
+After: framework/routes#coreroutes
+---
+Director:
+    rules:
+        'search' : 'BoltSiteSearch'
+        'site-map' : 'BoltSiteMap' # cannot be 'sitemap' or will override the google sitemaps controller!!

@@ -1,0 +1,1 @@
+Replacement mysite folder for ChristopherBolt.Com sites

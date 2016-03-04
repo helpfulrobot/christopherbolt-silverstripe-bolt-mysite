@@ -1,0 +1,64 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SSViewer:
+  theme: 'mytheme'
+
+# Add any required javascript and CSS to admin
+LeftAndMain:
+  extensions:
+    - MySiteLeftAndMain
+
+# Add back meta tags etc to SiteTree (done directly to Page on some sites, but has been moved to SiteTree to make upgrading SS 2.x sites easier)
+SiteTree:
+  nested_urls: true
+  extensions:
+   - BoltSiteTree
+
+# Image settings
+GD:
+  default_quality: 100
+
+GDBackend:
+  default_quality: 100
+
+ImagickBackend:
+  default_quality: 100
+
+# Custom site settings
+SiteConfig:
+  extensions:
+    - MySiteConfig
+
+# Remove remember me because it doesn't work
+Security:
+  autologin_enabled: false
+
+# Database connection
+MySQLDatabase:
+  connection_charset: 'utf8'
+
+# SITE SPECIFIC STUFF BELOW HERE ###########
+# Default image insert width
+HtmlEditorField:
+  insert_width: 960
+
+# Blog
+Blog:
+  hide_tags: true
+  hide_content: true
+
+BlogPost:
+  hide_authors: true
+  hide_image: true
+  use_addnewlistboxfield: true
+
+Link:
+  extensions:
+    - "Versioned('Stage', 'Live')"
